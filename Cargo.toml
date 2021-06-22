@@ -1,0 +1,12 @@
+[package]
+name = "sentry-surf-transport"
+description = "Sentry transport implementation for surf without having default features"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+futures = "0.3"
+httpdate = "1.0"
+sentry = { version = "0.23", default-features = false }
+surf = { version = "2.2", default-features = false }
+tokio = { version = "1.10.0", default-features = false }
